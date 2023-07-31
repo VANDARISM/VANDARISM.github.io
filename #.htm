@@ -1,0 +1,122 @@
+<div class="modal"><div class="fg" style="z-index: 10000; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; text-align: center;"><div style="text-align:center;width:100%"><div style="background:#111;color:white">チャット設定</div><div class="win_inner" style="display:inline-block;margin-top:30px;background:white;width:90%;padding:2px"><div style="margin-bottom:20px;"><style>
+.hdr{background:#CCC;color:black;padding:3px;font-size:9pt}
+.con{padding:5px}
+.con input{font-size:14pt}
+</style>
+<div style="width:100%;display:inline-block;text-align:left;position:relative" class="settings">
+<div class="closeSetting" style="text-align:center;color:#000;border:0.1px solid rgba(100,100,100,.2);border-radius:30px;width:30px;background:white;position:absolute;top:0px;right:0px;padding:2px;font-size:25pt"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+<div class="hdr">ピアノ関連</div>
+<div class="con">
+<label><table><tbody><tr>
+<td><span class="switch"><input class="swch" setting="is_renshu" type="checkbox"><span class="slider round"></span></span></td>
+<td>練習モードにする<br>
+<font color="#999" size="1">※鍵盤が共有されなくなるので。心行くまで練習できるよ。</font></td></tr>
+</tbody></table></label>
+<label><table><tbody><tr>
+<td><span class="switch"><input class="swch" setting="pedal" type="checkbox"><span class="slider round"></span></span></td>
+<td>ペダル踏みっぱ</td></tr>
+</tbody></table></label>
+</div>
+<div class="hdr">音量</div>
+<div class="con">
+<table><tbody><tr><td>
+<div style="display:inline-block">
+ピアノ<br>
+<input type="range" min="0.0" max="1.0" step="0.05" class="range" target="piano" setting="piano_volume">
+</div>
+</td><td>
+<div style="display:inline-block">
+ボイチャ<br>
+<input type="range" min="0.0" max="1.0" step="0.05" class="range" target="" voicha"="" setting="voicha_volume">
+</div>
+</td></tr></tbody></table>
+</div>
+<div class="hdr">チャット関連</div>
+<div class="con">
+<label><table><tbody><tr>
+<td><span class="switch"><input class="swch" setting="chat_yomi" type="checkbox"><span class="slider round"></span></span></td>
+<td>チャットを読み上げる</td></tr>
+</tbody></table></label>
+<label><table><tbody><tr>
+<td><span class="switch"><input class="swch" setting="chat_call" type="checkbox"><span class="slider round"></span></span></td>
+<td>チャットの着信時に音を鳴らす</td></tr>
+</tbody></table></label>
+</div>
+<div class="hdr">その他</div>
+<div class="con">
+<label><table><tbody><tr>
+<td><span class="switch"><input class="swch" setting="hide_voicha" type="checkbox"><span class="slider round"></span></span></td>
+<td>ボイチャを非表示</td></tr>
+</tbody></table></label>
+<label><table><tbody><tr>
+<td><span class="switch"><input class="swch" setting="hide_piano" type="checkbox"><span class="slider round"></span></span></td>
+<td>ピアノ鍵盤を非表示</td></tr>
+</tbody></table></label>
+</div>
+<style type="text/css">
+/* The switch - the box around the slider */
+.switch {
+	margin:3px;
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+</style></div></div></div></div></div></div>
